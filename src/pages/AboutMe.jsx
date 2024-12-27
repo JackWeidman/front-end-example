@@ -6,7 +6,7 @@ const About = () => {
     <>
       <Header />
       <h1 className="text-4xl font-bold text-center">About Me</h1>
-      <div className=" flex flex-col gap-4 container mx-auto p-4 rounded-lg shadow-lg mt-6 max-w-screen-lg sm:flex-row">
+      <div className=" flex flex-col gap-4 container mx-auto p-4 rounded-lg shadow-lg mt-6 max-w-screen-lg sm:flex-row items-center">
         {/* need to figure out how to center vertically */}
         <p className="mt-4 text-center">
           Hello, my name is John Weidman, but I go by Jack! I am a web developer

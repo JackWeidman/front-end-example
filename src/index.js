@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/index.css";
-import HomePage from "./pages/HomePage";
-import AboutMe from "./pages/AboutMe";
-import NotFoundPage from "./pages/NotFoundPage";
-import reportWebVitals from "./reportWebVitals";
+import HomePage from "./pages/HomePage.jsx";
+import AboutMe from "./pages/AboutMe.jsx";
+import NotFoundPage from "./pages/NotFoundPage.jsx";
+import reportWebVitals from "./reportWebVitals.js";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import NasaFun from "./pages/NasaFun";
+import NasaFun from "./pages/NasaFun.jsx";
 
 const router = createBrowserRouter([
   {

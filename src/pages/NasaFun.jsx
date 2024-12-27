@@ -22,7 +22,7 @@ const NasaFun = () => {
   return (
     <>
       <Header />
-      <form onSubmit={handleSubmit} className="mt-4">
+      <form onSubmit={handleSubmit} className="mt-4 flex items-center flex-col">
         <label
           htmlFor="date"
           className="block text-lg font-medium text-gray-700 ml-2"
@@ -38,12 +38,6 @@ const NasaFun = () => {
           min={"1995-06-16"}
           max={new Date().toISOString().split("T")[0]}
         />
-        <button
-          type="submit"
-          className="mt-4 bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 ml-2"
-        >
-          Take me to space!
-        </button>
       </form>
 
       {loading ? (
@@ -54,8 +48,8 @@ const NasaFun = () => {
             <div className="flex flex-col lg:flex-row items-center lg:items-start max-w-screen-xl mx-auto">
               <img
                 src={photo.hdurl}
-                alt={photo.title}
-                className="mb-4 w-full max-h-[70vh] lg:w-3/5 max-w-4xl h-auto rounded-lg shadow-lg object-contain"
+                alt="This content is unavailable"
+                className="w-full max-h-[70vh] lg:w-3/5 max-w-4xl h-auto  object-contain"
               />
               <div className="mt-4 lg:mt-0 lg:ml-6 text-center lg:text-left flex-1">
                 <h2 className="text-xl lg:text-3xl font-semibold">
