@@ -7,7 +7,6 @@ const LinkedInCard = () => {
       I wanted to show that I know how to use both. 
       I am also aware that I am making all of my env variables public, and that is not a good idea.
       I am doing this because I am not using any sensitive information, and for ease of use on your end. */}
-      {/* TODO: make sure photo is centered on mobile */}
       <img
         src="https://upunikself-bucket.s3.us-east-2.amazonaws.com/weidman+481.webp" // Replace with your profile photo URL
         alt="Your LinkedIn Profile"

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "../components/Button";
 import Header from "../components/Header";
-import Form from "../components/Form";
+import Form from "../components/EmailForm";
 import Modal from "../components/Modal";
 import BookList from "../components/Books/BookTable";
 function HomePage() {
@@ -13,10 +13,12 @@ function HomePage() {
       <Modal isOpen={isOpen} onClose={() => setModalOpen(false)}>
         <Form onClose={() => setModalOpen(false)} />
       </Modal>
-      <BookList></BookList>
-      <Button onClick={() => setModalOpen(true)} className="">
-        Submit Feedback!
-      </Button>
+      <BookList />
+      <div className="flex justify-center mb-8">
+        <Button onClick={() => setModalOpen(true)} className="items-center">
+          Submit Feedback!
+        </Button>
+      </div>
     </div>
   );
 }
